@@ -1,3 +1,4 @@
+#!/bin/bash
 
 #start 
 sleep 2
