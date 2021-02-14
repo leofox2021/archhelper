@@ -1,3 +1,4 @@
+#!/bin/bash
 #METHODS
 function yayinstaller {
 
