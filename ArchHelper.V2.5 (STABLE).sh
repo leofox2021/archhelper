@@ -140,6 +140,10 @@ function nvidiainstaller {
         if [[ $dmvar = "ExecStart=/usr/bin/gdm" ]] ; then 
             yay -S gdm-prime 
             prime-offload 
+            tput setaf 3 
+            echo "Please note that Optimus Manager doesn't work with Wayland sessions. 
+            Please use Xorg for that purpose."
+            sleep 2
         else 
             dmvar=1
         fi
