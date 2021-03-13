@@ -134,8 +134,7 @@ function nvidiainstaller {
         yay -S optimus-manager optimus-manager-qt
         sudo systemctl start optimus-manager
         sudo systemctl enable optimus-manager
-        dmvar=0 
-        
+        dmvar= grep '/usr/s\?bin' /etc/systemd/system/display-manager.service
         
         if [[ $dmvar = "ExecStart=/usr/bin/gdm" ]] ; then 
             yay -S gdm-prime 
