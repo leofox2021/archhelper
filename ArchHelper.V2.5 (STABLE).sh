@@ -144,6 +144,7 @@ function nvidiainstaller {
             echo "Please note that Optimus Manager doesn't work with Wayland sessions. 
             Please use Xorg for that purpose."
             sleep 2
+            tput sgr0 
         else 
             dmvar=1
         fi
